@@ -1,2 +1,7 @@
 # fractal-canvas
-HTML 5 canvas application for drawing various 3D fractals
+Basic application for drawing fractals.
+
+Future improvements might include:
+- interactive canvas area.
+- user-supplied iteration rule.
+- user-supplied color map. 
