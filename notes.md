@@ -9,3 +9,5 @@ lotus3 uses ```z = (history[n-1,:] - history[n-2, :])**2 + (z+c)**2 + (z+c)**3 +
 So if I want to go the OpenGL route, there's a way to vary values between vertices: http://pyopengl.sourceforge.net/context/tutorials/shader_2.html ... I would have a vertex for each point of 'interest' in the fractal, and color based on the absolute value at that point after some number of iterations. Zooming in or panning could be accomodated.
 
 I could also use Three.js or webGL or canvas if I want to go with a browser-based solution. I should still be able to make use of the GPU via the browser-based route. See 'ref/CS4406-U7-PA.html' for reference of a parametric geometry rendering.
+
+I found a program, Xaos, that allows uer input for the iteration rule. I've used (z-p)+(z+c)^2+(z+c)^3+(z+c)^4 and (z-p)^2+(z+c)^2+(z+c)^3+(z+c)^4, with the former producing arguably more interesting results. I also tried putting c outside, at the end, and got yet another fractal, based on the (z-p)+(z+c)^2+(z+c)^3+(z+c)^4 equation. It looks pretty similar but has almost a threefold symmetry. The 'fract0.xpf' file can be viewed with xaos.
